@@ -7,6 +7,6 @@ urlpatterns = [
     path('categories/<slug:slug>/quizzes/', QuizByCategaoryView.as_view()),
     path('categories/<slug:slug>/questions/', RandomQuestionsByCategoryView.as_view()),
     path('quiz/', QuizListView.as_view()),
-    path('quiz/<int:quiz_id>/submit/', StartQuizView.as_view()),
-    path('quiz/<int:quiz_id>/start/', SubmitQuizView.as_view())
+    path('quiz/<int:quiz_id>/start/', StartQuizView.as_view()),
+    path('quiz/<int:quiz_id>/submit/', SubmitQuizView.as_view())
 ]
